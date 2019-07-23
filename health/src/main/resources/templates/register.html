@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>register</title>
+</head>
+<body>
+<h1>注册页面</h1>
+
+<form role="form" method="post " th:action="@{/register}">
+    <div>
+            姓名：<input type="text" name="name"/>
+    </div>
+    <div>
+            用户名： <input type="text" name="username"/>
+    </div>
+
+    <div>
+            密码： <input type="text" name="password"/>
+
+    </div>
+    <div>
+            地址<input type="text" name="address">
+    </div>
+
+
+
+    <a href="/login">返回登陆</a>
+
+
+
+
+    <input  type="submit"  value="注册" onclick="MsgBox()"/>
+    <script language="javascript">
+        function MsgBox() //声明标识符
+        {
+            alert("注册成功"); //弹出对话框
+        }
+    </script>
+    <!--引用JS代码以达到弹出对话框目的 结束-->
+
+
+</form>
+</body>
+</html>
